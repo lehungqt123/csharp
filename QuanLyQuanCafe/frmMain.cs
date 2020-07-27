@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL_DAL;
 
 namespace QuanLyQuanCafe
 {
@@ -16,7 +17,7 @@ namespace QuanLyQuanCafe
         int n;
         public frmMain()
         {
-            InitializeComponent();          
+            InitializeComponent();
         }
 
         private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
@@ -65,5 +66,9 @@ namespace QuanLyQuanCafe
             txtTienThua.Enabled = false;
         }
 
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

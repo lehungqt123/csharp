@@ -74,5 +74,6 @@ namespace QuanLyQuanCafe
             this.Visible = false;
             Program.mainForm.Show();
         }
+
     }
 }

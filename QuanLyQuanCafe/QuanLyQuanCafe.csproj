@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BLL_DAL">
+      <HintPath>..\BLL_DAL\bin\Debug\BLL_DAL.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -57,6 +60,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLy.Designer.cs">
+      <DependentUpon>frmQuanLy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QL_NguoiDung.cs" />
@@ -65,6 +74,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLy.resx">
+      <DependentUpon>frmQuanLy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,8 +103,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\1486564400-account_81513.ico" />
+    <Content Include="Images\Add.png" />
+    <Content Include="Images\Back.png" />
     <Content Include="Images\background.jpg" />
+    <Content Include="Images\Info.png" />
+    <Content Include="Images\Line Chart.png" />
+    <Content Include="Images\Load.png" />
+    <Content Include="Images\Loading.png" />
+    <Content Include="Images\Modify.png" />
+    <Content Include="Images\Next.png" />
+    <Content Include="Images\Picture.png" />
+    <Content Include="Images\Pie Chart.png" />
+    <Content Include="Images\Print.png" />
+    <Content Include="Images\Profile.png" />
+    <Content Include="Images\Save.png" />
+    <Content Include="Images\Search.png" />
+    <Content Include="Images\tm.jfif" />
+    <Content Include="Images\Warning.png" />
+    <None Include="Resources\icons8-admin-settings-male-30.png" />
+    <None Include="Resources\icons8-admin-settings-male-48.png" />
     <None Include="Images\background1.jpg" />
+    <Content Include="Images\Bar Chart.png" />
+    <Content Include="Images\br.jfif" />
+    <Content Include="Images\Comment.png" />
+    <Content Include="Images\Delete.png" />
+    <Content Include="Images\Email.png" />
+    <Content Include="Images\Exit.png" />
     <Content Include="Images\Greg-Barnes-Vintage-Kitchen-Mug.ico" />
     <None Include="Resources\icons8-login-50.png" />
     <None Include="Images\icons8-restaurant-table-60.png" />
