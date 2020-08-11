@@ -40,7 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cafe_BLL.cs" />
+    <Compile Include="CTHoaDon_BLL.cs" />
+    <Compile Include="HoaDon_BLL.cs" />
+    <Compile Include="KhachHang_BLL.cs" />
+    <Compile Include="LoaiTD_BLL.cs" />
+    <Compile Include="NhaCungCap_BLL.cs" />
+    <Compile Include="NhanVien_BLL.cs" />
+    <Compile Include="Table_BLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -52,6 +58,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLCF.dbml</DependentUpon>
     </Compile>
+    <Compile Include="ThucDon_BLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -73,6 +80,13 @@
       <DependentUpon>QLCF.dbml</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Class\Class.csproj">
+      <Project>{f3b12937-b435-435f-98b9-12909eb0886e}</Project>
+      <Name>Class</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

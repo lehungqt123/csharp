@@ -1,5 +1,10 @@
 G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\BLL_DAL\bin\Debug\BLL_DAL.dll.config
 G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\BLL_DAL\bin\Debug\BLL_DAL.dll
 G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\BLL_DAL\bin\Debug\BLL_DAL.pdb
+G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\BLL_DAL\bin\Debug\Class.dll
+G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\BLL_DAL\bin\Debug\Class.pdb
 G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\BLL_DAL\obj\Debug\BLL_DAL.dll
 G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\BLL_DAL\obj\Debug\BLL_DAL.pdb
+G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\BLL_DAL\obj\Debug\BLL_DAL.csprojAssemblyReference.cache
+G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\BLL_DAL\obj\Debug\BLL_DAL.csproj.CoreCompileInputs.cache
+G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\BLL_DAL\obj\Debug\BLL_DAL.csproj.CopyComplete

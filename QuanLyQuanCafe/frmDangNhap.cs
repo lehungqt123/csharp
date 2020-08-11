@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL_DAL;
 
 namespace QuanLyQuanCafe
 {
@@ -73,6 +74,11 @@ namespace QuanLyQuanCafe
             }
             this.Visible = false;
             Program.mainForm.Show();
+        }
+
+        private void frmDangNhap_Load(object sender, EventArgs e)
+        {
+            
         }
 
     }

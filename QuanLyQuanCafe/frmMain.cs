@@ -8,54 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using Class;
 
 namespace QuanLyQuanCafe
 {
     public partial class frmMain : Form
-    {
+    {       
         int[,] vitri;
         int n;
+        private bool isCollapsed;
+        
         public frmMain()
         {
             InitializeComponent();
         }
-
-        private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
-        {
-            e.DrawBackground();
-            Graphics g = e.Graphics;
-            g.FillRectangle(new SolidBrush(Color.YellowGreen), e.Bounds);
-            e.Graphics.DrawString(this.tabMain.TabPages[e.Index].Text, e.Font, Brushes.Black, e.Bounds.Left + 1, e.Bounds.Top + 4);
-            e.DrawFocusRectangle();
-        }
         
-
-        private void tabSecond_DrawItem(object sender, DrawItemEventArgs e)
-        {
-            e.DrawBackground();
-            Graphics g = e.Graphics;
-            g.FillRectangle(new SolidBrush(Color.YellowGreen), e.Bounds);
-            e.Graphics.DrawString(this.tabSecond.TabPages[e.Index].Text, e.Font, Brushes.Black, e.Bounds.Left + 1, e.Bounds.Top + 4);
-            e.DrawFocusRectangle();
-        }
-
-        private void tabSecond2_DrawItem(object sender, DrawItemEventArgs e)
-        {
-            e.DrawBackground();
-            Graphics g = e.Graphics;
-            g.FillRectangle(new SolidBrush(Color.YellowGreen), e.Bounds);
-            e.Graphics.DrawString(this.tabSecond2.TabPages[e.Index].Text, e.Font, Brushes.Black, e.Bounds.Left + 1, e.Bounds.Top + 4);
-            e.DrawFocusRectangle();
-        }
-
-        private void tabCtrHD_DrawItem(object sender, DrawItemEventArgs e)
-        {
-            e.DrawBackground();
-            Graphics g = e.Graphics;
-            g.FillRectangle(new SolidBrush(Color.YellowGreen), e.Bounds);
-            e.Graphics.DrawString(this.tabCtrHD.TabPages[e.Index].Text, e.Font, Brushes.Black, e.Bounds.Left + 1, e.Bounds.Top + 4);
-            e.DrawFocusRectangle();
-        }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
@@ -68,7 +35,68 @@ namespace QuanLyQuanCafe
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            
+            timer1.Start();
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmDangNhap frm = new frmDangNhap();
+            frm.Show();
+        }
+       
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(isCollapsed)
+            {
+                pnUser.Height += 10;
+                if(pnUser.Size==pnUser.MaximumSize)
+                {
+                    timer1.Stop();
+                    isCollapsed = false;
+                }
+            }
+            else
+            {
+                pnUser.Height -= 10;
+                if (pnUser.Size == pnUser.MinimumSize)
+                {
+                    timer1.Stop();
+                    isCollapsed = true;
+                }
+            }
+        }
+
+        private void btnAdmin_Click_1(object sender, EventArgs e)
+        {
+            frmQuanLy frm = new frmQuanLy();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnBan_Click(object sender, EventArgs e)
+        {
+            btnBan.BackColor = Color.Green;
+            frmBan frm = new frmBan();
+            pnHienThi.Show();
+            pnHienThi.Controls.Clear();
+            frm.TopLevel = false;
+            frm.Dock = DockStyle.Fill;
+            pnHienThi.Controls.Add(frm);
+            frm.Show();
+        }
+
+        private void btnThucDon_Click(object sender, EventArgs e)
+        {
+            btnThucDon.BackColor = Color.Green;
+            frmThucDon frm = new frmThucDon();
+            pnHienThi.Show();
+            pnHienThi.Controls.Clear();
+            frm.TopLevel = false;
+            frm.Dock = DockStyle.Fill;
+            pnHienThi.Controls.Add(frm);
+            frm.Show();
         }
     }
 }
