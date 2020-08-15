@@ -84,5 +84,23 @@ namespace BLL_DAL
                 return "";
 
         }
+
+        public int getSize()
+        {
+            int size;
+            size = qlcf.ChiTietThucDons.Select(sp => sp).Count();
+            return size;
+        }
+
+        public int getGiaBan(string masp)
+        {
+            int giaban = 0;
+            ChiTietThucDon td = qlcf.ChiTietThucDons.Where(sp => sp.MaMon == masp).FirstOrDefault();
+            if (td != null)
+            {
+                giaban = (int)td.DonGia;
+            }
+            return giaban;
+        }
     }
 }

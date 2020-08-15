@@ -34,6 +34,7 @@
             this.txtUser = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
+            this.btnHuy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDangNhap
@@ -43,7 +44,7 @@
             this.btnDangNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.Image = global::QuanLyQuanCafe.Properties.Resources.iconlogin;
             this.btnDangNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangNhap.Location = new System.Drawing.Point(129, 142);
+            this.btnDangNhap.Location = new System.Drawing.Point(26, 151);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(136, 35);
             this.btnDangNhap.TabIndex = 9;
@@ -55,7 +56,7 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(108, 102);
+            this.txtPassword.Location = new System.Drawing.Point(108, 97);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(214, 26);
@@ -64,7 +65,7 @@
             // txtUser
             // 
             this.txtUser.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Location = new System.Drawing.Point(108, 59);
+            this.txtUser.Location = new System.Drawing.Point(108, 54);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(214, 26);
             this.txtUser.TabIndex = 7;
@@ -76,7 +77,7 @@
             this.lblPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Image = ((System.Drawing.Image)(resources.GetObject("lblPassword.Image")));
             this.lblPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblPassword.Location = new System.Drawing.Point(23, 105);
+            this.lblPassword.Location = new System.Drawing.Point(23, 100);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(78, 18);
             this.lblPassword.TabIndex = 6;
@@ -89,24 +90,43 @@
             this.lblUser.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.Image = ((System.Drawing.Image)(resources.GetObject("lblUser.Image")));
             this.lblUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblUser.Location = new System.Drawing.Point(23, 58);
+            this.lblUser.Location = new System.Drawing.Point(23, 53);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(41, 18);
             this.lblUser.TabIndex = 5;
             this.lblUser.Text = "User";
             // 
+            // btnHuy
+            // 
+            this.btnHuy.BackColor = System.Drawing.Color.White;
+            this.btnHuy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnHuy.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
+            this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuy.Location = new System.Drawing.Point(186, 151);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(136, 35);
+            this.btnHuy.TabIndex = 10;
+            this.btnHuy.Text = "Hủy bỏ";
+            this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
             // frmDangNhap
             // 
+            this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(362, 221);
+            this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUser);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -124,5 +144,6 @@
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Button btnHuy;
     }
 }

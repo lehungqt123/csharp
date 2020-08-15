@@ -28,7 +28,7 @@ namespace QuanLyQuanCafe
         }
         public int Check_User(string pUser, string pPass)
         {
-            SqlDataAdapter daUser = new SqlDataAdapter("SELECT * FROM QL_NguoiDung WHERE TenDangNhap='" + pUser + "' AND MatKhau='" + pPass + "'", Properties.Settings.Default.CafeConn);
+            SqlDataAdapter daUser = new SqlDataAdapter("SELECT * FROM QLNguoiDung WHERE TenDangNhap='" + pUser + "' AND MatKhau='" + pPass + "'", Properties.Settings.Default.CafeConn);
             DataTable dt = new DataTable();
             daUser.Fill(dt);
             if (dt.Rows.Count == 0)

@@ -35,9 +35,24 @@
     <Reference Include="BLL_DAL">
       <HintPath>..\BLL_DAL\bin\Debug\BLL_DAL.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Syncfusion.Compression.Base">
+      <HintPath>C:\Users\PrivateOnly\Downloads\BTNhom_QLQuanCafe\QuanLyQuanCafe\QuanLyQuanCafe\bin\Debug\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocIO.Base">
+      <HintPath>C:\Users\PrivateOnly\Downloads\BTNhom_QLQuanCafe\QuanLyQuanCafe\QuanLyQuanCafe\bin\Debug\Syncfusion.DocIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base">
+      <HintPath>C:\Users\PrivateOnly\Downloads\BTNhom_QLQuanCafe\QuanLyQuanCafe\QuanLyQuanCafe\bin\Debug\Syncfusion.XlsIO.Base.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,17 +63,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmBan.cs">
+    <Compile Include="ExportData\Constants.cs" />
+    <Compile Include="ExportData\ExcelExport.cs" />
+    <Compile Include="ExportData\FileCommon.cs" />
+    <Compile Include="ExportData\Global.cs" />
+    <Compile Include="frmChonBanKH.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBan.Designer.cs">
-      <DependentUpon>frmBan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCTHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCTHoaDon.Designer.cs">
-      <DependentUpon>frmCTHoaDon.cs</DependentUpon>
+    <Compile Include="frmChonBanKH.Designer.cs">
+      <DependentUpon>frmChonBanKH.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
@@ -66,17 +79,11 @@
     <Compile Include="frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHoaDon.cs">
+    <Compile Include="frmDatMon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHoaDon.Designer.cs">
-      <DependentUpon>frmHoaDon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmKhachHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmKhachHang.Designer.cs">
-      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    <Compile Include="frmDatMon.Designer.cs">
+      <DependentUpon>frmDatMon.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -90,12 +97,6 @@
     <Compile Include="frmQuanLy.Designer.cs">
       <DependentUpon>frmQuanLy.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmThucDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmThucDon.Designer.cs">
-      <DependentUpon>frmThucDon.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmXuLyHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,29 +106,20 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QL_NguoiDung.cs" />
-    <EmbeddedResource Include="frmBan.resx">
-      <DependentUpon>frmBan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCTHoaDon.resx">
-      <DependentUpon>frmCTHoaDon.cs</DependentUpon>
+    <EmbeddedResource Include="frmChonBanKH.resx">
+      <DependentUpon>frmChonBanKH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmHoaDon.resx">
-      <DependentUpon>frmHoaDon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmKhachHang.resx">
-      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    <EmbeddedResource Include="frmDatMon.resx">
+      <DependentUpon>frmDatMon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLy.resx">
       <DependentUpon>frmQuanLy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmThucDon.resx">
-      <DependentUpon>frmThucDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmXuLyHoaDon.resx">
       <DependentUpon>frmXuLyHoaDon.cs</DependentUpon>
@@ -157,9 +149,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\1486564400-account_81513.ico" />
-    <Content Include="Images\Add.png" />
     <Content Include="Images\Back.png" />
     <Content Include="Images\background.jpg" />
+    <None Include="Images\icons8-insert-button-30.png" />
+    <None Include="Images\icons8-collapse-arrow-30.png" />
+    <None Include="Images\icons8-collapse-arrow-30 %281%29.png" />
+    <None Include="Images\icons8-expand-arrow-30.png" />
     <Content Include="Images\Info.png" />
     <Content Include="Images\Line Chart.png" />
     <Content Include="Images\Load.png" />
@@ -180,19 +175,13 @@
     <Content Include="Images\Bar Chart.png" />
     <Content Include="Images\br.jfif" />
     <Content Include="Images\Comment.png" />
-    <Content Include="Images\Delete.png" />
     <Content Include="Images\Email.png" />
     <Content Include="Images\Exit.png" />
     <Content Include="Images\Greg-Barnes-Vintage-Kitchen-Mug.ico" />
     <None Include="Resources\icons8-login-50.png" />
     <None Include="Images\icons8-restaurant-table-60.png" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Class\Class.csproj">
-      <Project>{f3b12937-b435-435f-98b9-12909eb0886e}</Project>
-      <Name>Class</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

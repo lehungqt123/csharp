@@ -58,6 +58,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLCF.dbml</DependentUpon>
     </Compile>
+    <Compile Include="TaiKhoan_BLL.cs" />
     <Compile Include="ThucDon_BLL.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -79,12 +80,6 @@
     <None Include="QLCF.dbml.layout">
       <DependentUpon>QLCF.dbml</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Class\Class.csproj">
-      <Project>{f3b12937-b435-435f-98b9-12909eb0886e}</Project>
-      <Name>Class</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

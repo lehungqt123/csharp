@@ -30,6 +30,18 @@ namespace BLL_DAL
             return ds;
         }
 
+        public int getSize()
+        {
+            int size = 0;
+            size = qlcf.ChiTietHoaDons.Select(b => b).Count();
+            return size;
+        }
+
+        public string loadTenBan(int maBan)
+        {
+            ChiTietHoaDon cthd = qlcf.ChiTietHoaDons.Where(b => b.MaBan == maBan).FirstOrDefault();
+            return cthd.Ban.TenBan;
+        }
         public void them1CTHoaDon(string maHD, int maBan, string maMon, int soLuong, int donGia, int thanhTien)
         {
             ChiTietHoaDon hd = new ChiTietHoaDon();

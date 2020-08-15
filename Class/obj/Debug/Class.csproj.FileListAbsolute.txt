@@ -1,5 +1,0 @@
-G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\Class\bin\Debug\Class.dll
-G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\Class\bin\Debug\Class.pdb
-G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\Class\obj\Debug\Class.dll
-G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\Class\obj\Debug\Class.pdb
-G:\BTNhom_QLQuanCafe\QuanLyQuanCafe\Class\obj\Debug\Class.csproj.CoreCompileInputs.cache

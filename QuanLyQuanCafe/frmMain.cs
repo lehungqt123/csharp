@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
-using Class;
+using QuanLyQuanCafe.Properties;
 
 namespace QuanLyQuanCafe
 {
@@ -17,7 +17,6 @@ namespace QuanLyQuanCafe
         int[,] vitri;
         int n;
         private bool isCollapsed;
-        
         public frmMain()
         {
             InitializeComponent();
@@ -26,11 +25,14 @@ namespace QuanLyQuanCafe
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            txtTongTienHang.Enabled = false;
-            txtGiamGia.Enabled = false;
-            txtKhachCanTra.Enabled = false;
-            txtTienKhachDua.Enabled = false;
-            txtTienThua.Enabled = false;
+            frmChonBanKH frm = new frmChonBanKH();
+            pnHienThi.Show();
+            pnHienThi.Controls.Clear();
+            frm.TopLevel = false;
+            frm.Dock = DockStyle.Fill;
+            pnHienThi.Controls.Add(frm);
+            frm.Show();
+
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)
@@ -75,10 +77,20 @@ namespace QuanLyQuanCafe
             this.Hide();
         }
 
-        private void btnBan_Click(object sender, EventArgs e)
+        private void btnDatMon_Click(object sender, EventArgs e)
         {
-            btnBan.BackColor = Color.Green;
-            frmBan frm = new frmBan();
+            frmDatMon frm = new frmDatMon();
+            pnHienThi.Show();
+            pnHienThi.Controls.Clear();
+            frm.TopLevel = false;
+            frm.Dock = DockStyle.Fill;
+            pnHienThi.Controls.Add(frm);
+            frm.Show();            
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            frmChonBanKH frm = new frmChonBanKH();
             pnHienThi.Show();
             pnHienThi.Controls.Clear();
             frm.TopLevel = false;
@@ -87,10 +99,20 @@ namespace QuanLyQuanCafe
             frm.Show();
         }
 
-        private void btnThucDon_Click(object sender, EventArgs e)
+        private void btnHoaDon_Click(object sender, EventArgs e)
         {
-            btnThucDon.BackColor = Color.Green;
-            frmThucDon frm = new frmThucDon();
+            frmXuLyHoaDon frm = new frmXuLyHoaDon();
+            pnHienThi.Show();
+            pnHienThi.Controls.Clear();
+            frm.TopLevel = false;
+            frm.Dock = DockStyle.Fill;
+            pnHienThi.Controls.Add(frm);
+            frm.Show();
+        }
+
+        private void btnChonBan_Click(object sender, EventArgs e)
+        {
+            frmChonBanKH frm = new frmChonBanKH();
             pnHienThi.Show();
             pnHienThi.Controls.Clear();
             frm.TopLevel = false;

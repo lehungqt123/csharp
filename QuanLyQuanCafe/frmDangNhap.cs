@@ -81,5 +81,12 @@ namespace QuanLyQuanCafe
             
         }
 
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }    
+        }
     }
 }

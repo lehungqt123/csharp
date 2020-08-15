@@ -24,7 +24,6 @@ namespace BLL_DAL
                          k.NgaySinh,
                          k.GioiTinh,
                          k.Luong,
-                         k.HinhAnh,
                      };
             return ds;
         }
@@ -37,7 +36,6 @@ namespace BLL_DAL
             nv.NgaySinh = ngaySinh;
             nv.GioiTinh = gioiTinh;
             nv.Luong = luong;
-            nv.HinhAnh = hinhAnh;
 
             qlcf.NhanViens.InsertOnSubmit(nv);
             qlcf.SubmitChanges();
@@ -56,7 +54,6 @@ namespace BLL_DAL
                 NhanViens.NgaySinh = ngaySinh;
                 NhanViens.GioiTinh = gioiTinh;
                 NhanViens.Luong = luong;
-                NhanViens.HinhAnh = hinhAnh;
 
             }
             qlcf.SubmitChanges();
